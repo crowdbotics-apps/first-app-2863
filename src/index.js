@@ -16,6 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true}));
 app.use(cors());
 
 //create middleware for utilizing model
+/*
 app.use(async (req, res, next) => {
 	req.context = {
 		models,
@@ -23,6 +24,7 @@ app.use(async (req, res, next) => {
 	};
 	next();
 })
+*/
 
 //invoke routes
 app.use('/', routes.server);
